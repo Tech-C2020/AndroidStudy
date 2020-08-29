@@ -3,7 +3,9 @@ package com.example.teacher.androidstudy
 import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AlertDialog
 import android.util.Log
+import android.widget.Toast
 import com.example.teacher.androidstudy.databinding.ActivityUiSample2Binding
 import com.example.teacher.androidstudy.viewmodel.FormViewModel
 
@@ -34,12 +36,13 @@ class UiSampleActivity : AppCompatActivity() {
 
             // リアクティブプログラミング
             form.apply {
-                name.set("matsumoto")
+               // name.set("matsumoto")
+                name = "matsumoto"
                 mail.set("hoge@yahoo.co.jp")
                 gender.set(R.id.gender_rb2)
                 iphone.set(true)
                 android.set(false)
-                name.notifyChange()
+               // name.notifyChange()
                 mail.notifyChange()
             }
 
@@ -53,12 +56,24 @@ class UiSampleActivity : AppCompatActivity() {
 
         // saveボタンのクリックイベント
         binding.saveBtn.setOnClickListener {
-            Log.i("form name", form.name.get())
+            Log.i("form name", form.name)
 
-            // 本来はここでデータを保存する
-            // サーバに保存 or 端末内に保存(SQLite)
+            // ダイアログ
+            AlertDialog.Builder(this)
+                .setTitle("Save")
+                .setMessage("本当に保存しますか？")
+                .setPositiveButton("OK"){ dialog, which ->
+                    // 本来はここでデータを保存する
+                    // サーバに保存 or 端末内に保存(SQLite)
+                    finish() // 現在表示しているActivityを閉じる
 
-
+                    // トースト
+                    Toast.makeText(this,"complete", Toast.LENGTH_LONG).show()
+                }
+                .setNegativeButton("Cancel"){dialog, which ->
+                    dialog.cancel()
+                }
+                .show()
         }
 
 //        // レイアウトのインスタンスを取得
