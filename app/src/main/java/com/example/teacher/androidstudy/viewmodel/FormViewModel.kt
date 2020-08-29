@@ -1,8 +1,13 @@
 package com.example.teacher.androidstudy.viewmodel
 
-class FromViewModel{
-    var name = ""
-    var mail = ""
-    var gender = 0
-    var isIphone = false
+import android.databinding.ObservableBoolean
+import android.databinding.ObservableField
+import android.databinding.ObservableInt
+
+class FormViewModel{
+    var name = ObservableField<String>()
+    var mail = ObservableField<String>()
+    var gender = ObservableInt()
+    var iphone = ObservableBoolean()
+    var android = ObservableBoolean()
 }

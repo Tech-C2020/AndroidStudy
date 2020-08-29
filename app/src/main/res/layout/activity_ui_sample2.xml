@@ -1,146 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
 
-<data>
-    <variable
-            name="viewModel"
-            type="com.example.teacher.androidstudy.viewmodel.FromViewModel" />
-</data>
+    <data>
 
+        <variable
+                name="viewModel"
+                type="com.example.teacher.androidstudy.viewmodel.FormViewModel" />
+    </data>
 
-<android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        tools:context=".UiSampleActivity"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="Form"
-                android:textSize="24sp" />
+            android:padding="16dp"
+            tools:context=".UiSampleActivity"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:text="お名前" />
-
-            <EditText
-                    android:id="@+id/name_edit_text"
-                    android:text="@{viewModel.name}"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:orientation="horizontal">
-
-            <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:text="メールアドレス" />
-
-            <EditText
-                    android:id="@+id/email_edit_text"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:orientation="horizontal">
-
-            <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:text="性別" />
-
-            <RadioGroup
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="男性" />
-
-                <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="女性" />
-
-                <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="ドチラデモナイ" />
-            </RadioGroup>
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:orientation="horizontal">
-
-            <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:text="端末" />
-
-            <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Form"
+                    android:textSize="24sp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="お名前" />
+
+                <EditText
+                        android:id="@+id/name_edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@={viewModel.name}" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="メールアドレス" />
+
+                <EditText
+                        android:id="@+id/email_edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@={viewModel.mail}"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="性別" />
+
+                <RadioGroup
+                        android:id="@+id/gender_radio_group"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checkedButton="@={viewModel.gender}">
+
+                    <RadioButton
+                            android:id="@+id/gender_rb1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="男性" />
+
+                    <RadioButton
+                            android:id="@+id/gender_rb2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="女性" />
+
+                    <RadioButton
+                            android:id="@+id/gender_rb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ドチラデモナイ" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="端末" />
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <CheckBox
+                            android:id="@+id/iphone_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="@={viewModel.iphone}"
+                            android:text="iphone" />
+
+                    <CheckBox
+                            android:id="@+id/android_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="@={viewModel.android}"
+                            android:text="android" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:orientation="vertical">
 
-                <CheckBox
-                        android:layout_width="wrap_content"
+                <Button
+                        android:id="@+id/test_btn"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="iphone" />
+                        android:layout_marginBottom="16dp"
+                        android:text="適当なユーザデータ" />
 
-                <CheckBox
-                        android:layout_width="wrap_content"
+                <Button
+                        android:id="@+id/save_btn"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="android" />
+                        android:text="Save" />
 
             </LinearLayout>
 
         </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
 
-    </LinearLayout>
-</android.support.constraint.ConstraintLayout>
-
+    </ScrollView>
 </layout>
