@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AndroidStudy</string>
     <string name="ui_sample_btn_title">Uiサンプル</string>
+    <string name="db_sample_btn_title">DBサンプル</string>
 </resources>
