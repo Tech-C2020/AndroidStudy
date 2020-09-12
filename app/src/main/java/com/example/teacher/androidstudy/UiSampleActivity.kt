@@ -38,12 +38,11 @@ class UiSampleActivity : AppCompatActivity() {
             form.apply {
                // name.set("matsumoto")
                 name = "matsumoto"
-                mail.set("hoge@yahoo.co.jp")
-                gender.set(R.id.gender_rb2)
+                mail = "hoge@yahoo.co.jp"
+                gender = R.id.gender_rb2
                 iphone.set(true)
                 android.set(false)
                // name.notifyChange()
-                mail.notifyChange()
             }
 
 //            form.name.set("matsumoto")
