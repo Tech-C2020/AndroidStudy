@@ -38,9 +38,18 @@ class DbSampleActivity : AppCompatActivity() {
 
         try {
 //            // データを追加
-            //userHelper?.insert("matsumoto", "hoge@yahoo.co.jp", 1)
-//            userHelper?.insert("tanaka", "hoge@yahoo.co.jp", 1)
-//            userHelper?.insert("suzuki", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test1", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test2", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test3", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test4", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test5", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test6", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test7", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test8", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test9", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test10", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test11", "hoge@yahoo.co.jp", 1)
+//            userHelper?.insert("test12", "hoge@yahoo.co.jp", 1)
 //
 //            userHelper?.commit()
 
@@ -58,7 +67,7 @@ class DbSampleActivity : AppCompatActivity() {
                 // テストデータを追加
                 userHelper?.insert("matsumoto", "hoge@yahoo.co.jp", 1)
             }
-            
+
 
             viewModel.fromUserDto(userList?.first { it.id == 1 })
             binding.viewModel = viewModel // viewmodelをバインド

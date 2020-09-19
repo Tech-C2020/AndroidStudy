@@ -2,4 +2,6 @@
     <string name="app_name">AndroidStudy</string>
     <string name="ui_sample_btn_title">Uiサンプル</string>
     <string name="db_sample_btn_title">DBサンプル</string>
+    <string name="pref_sample_btn_title">Prefサンプル</string>
+    <string name="list_sample_btn_title">Listサンプル</string>
 </resources>
