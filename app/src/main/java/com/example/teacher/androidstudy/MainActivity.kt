@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         val dbBtn = findViewById<Button>(R.id.db_sample_btn)
         val prefBtn = findViewById<Button>(R.id.pref_sample_btn)
         val listBtn = findViewById<Button>(R.id.list_sample_btn)
+        val intentBtn = findViewById<Button>(R.id.intent_sample_btn)
 
         // listenerをsetOnClickListenerメソッドで渡す（レガシー）
 //        sampleBtn.setOnClickListener(object : View.OnClickListener{
@@ -45,6 +46,11 @@ class MainActivity : AppCompatActivity() {
 
         listBtn.setOnClickListener {
             val intent = Intent(this,ListSampleActivity::class.java)
+            startActivity(intent) // インテントを実行
+        }
+
+        intentBtn.setOnClickListener {
+            val intent = Intent(this,IntentSampleActivity::class.java)
             startActivity(intent) // インテントを実行
         }
 
