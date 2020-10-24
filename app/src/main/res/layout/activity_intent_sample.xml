@@ -31,5 +31,19 @@
                 android:layout_marginBottom="16dp"
                 android:text="A→tel"/>
 
+        <Button
+                android:id="@+id/test4"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="16dp"
+                android:text="A→alerm"/>
+
+        <Button
+                android:id="@+id/test5"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="16dp"
+                android:text="A→timer"/>
+
     </LinearLayout>
 </layout>

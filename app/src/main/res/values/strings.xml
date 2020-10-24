@@ -5,4 +5,5 @@
     <string name="pref_sample_btn_title">Prefサンプル</string>
     <string name="list_sample_btn_title">Listサンプル</string>
     <string name="intent_sample_btn_title">Intentサンプル</string>
+    <string name="fragment_sample_btn_title">Fragmentサンプル</string>
 </resources>

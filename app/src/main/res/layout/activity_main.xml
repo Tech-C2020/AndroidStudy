@@ -50,6 +50,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/intent_sample_btn_title" />
+
+        <Button
+                android:id="@+id/fragment_sample_btn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/fragment_sample_btn_title" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
