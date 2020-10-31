@@ -3,6 +3,7 @@
         package="com.example.teacher.androidstudy">
 
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
             android:allowBackup="true"
@@ -11,7 +12,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".FragmentSampleActivity"></activity>
+        <activity android:name=".WebViewSampleActivity"></activity>
+        <activity android:name=".FragmentSampleActivity" />
         <activity android:name=".IntentCalledSampleActivity" />
         <activity android:name=".IntentSampleActivity" />
         <activity android:name=".ListSampleActivity" />

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         val listBtn = findViewById<Button>(R.id.list_sample_btn)
         val intentBtn = findViewById<Button>(R.id.intent_sample_btn)
         val fragmentBtn = findViewById<Button>(R.id.fragment_sample_btn)
+        val webViewBtn = findViewById<Button>(R.id.webview_sample_btn)
 
         // listenerをsetOnClickListenerメソッドで渡す（レガシー）
 //        sampleBtn.setOnClickListener(object : View.OnClickListener{
@@ -57,6 +59,13 @@ class MainActivity : AppCompatActivity() {
 
         fragmentBtn.setOnClickListener {
             val intent = Intent(this,FragmentSampleActivity::class.java)
+            startActivity(intent) // インテントを実行
+        }
+
+        webViewBtn.setOnClickListener {
+            val intent = Intent(this,WebViewSampleActivity::class.java)
+            intent.putExtra(WebViewSampleActivity.EXTRA_URL,"https://yahoo.co.jp")
+            intent.putExtra(WebViewSampleActivity.EXTRA_INTERNAL, true)
             startActivity(intent) // インテントを実行
         }
 
