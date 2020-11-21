@@ -12,7 +12,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".WebViewSampleActivity"></activity>
+        <activity android:name=".BindSampleActivity"></activity>
+        <activity android:name=".BindingSampleActivity" />
+        <activity android:name=".WebViewSampleActivity" />
         <activity android:name=".FragmentSampleActivity" />
         <activity android:name=".IntentCalledSampleActivity" />
         <activity android:name=".IntentSampleActivity" />

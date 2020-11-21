@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         val intentBtn = findViewById<Button>(R.id.intent_sample_btn)
         val fragmentBtn = findViewById<Button>(R.id.fragment_sample_btn)
         val webViewBtn = findViewById<Button>(R.id.webview_sample_btn)
+        val bindingBtn = findViewById<Button>(R.id.binding_sample_btn)
 
         // listenerをsetOnClickListenerメソッドで渡す（レガシー）
 //        sampleBtn.setOnClickListener(object : View.OnClickListener{
@@ -66,6 +67,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,WebViewSampleActivity::class.java)
             intent.putExtra(WebViewSampleActivity.EXTRA_URL,"https://yahoo.co.jp")
             intent.putExtra(WebViewSampleActivity.EXTRA_INTERNAL, true)
+            startActivity(intent) // インテントを実行
+        }
+
+        bindingBtn.setOnClickListener {
+            val intent = Intent(this,BindSampleActivity::class.java)
             startActivity(intent) // インテントを実行
         }
 
