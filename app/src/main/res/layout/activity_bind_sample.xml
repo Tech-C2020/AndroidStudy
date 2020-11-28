@@ -10,7 +10,7 @@
                 type="com.example.teacher.androidstudy.handler.TestHandler" />
         <variable
                 name="listener"
-                type="com.example.teacher.androidstudy.handler.TestLitener" />
+                type="com.example.teacher.androidstudy.handler.TestListener" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -28,14 +28,14 @@
                     android:id="@+id/test1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="@{(v) -> handler.handleButton(v,1)}"
+                    android:onClick="@{(v) -> listener.handleButton(v,1)}"
                     android:text="test1" />
 
             <Button
                     android:id="@+id/test2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="@{(v) -> handler.handleButton(v,2)}"
+                    android:onClick="@{(v) -> listener.handleButton(v,2)}"
                     android:text="test2" />
         </LinearLayout>
 
