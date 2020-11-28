@@ -5,8 +5,7 @@ import android.view.View
 import android.widget.Toast
 
 class TestHandler {
-    fun handleButton(view : View, value: Int){
-        Log.i("testhandler", view.tag.toString())
-        //Toast.makeText(this,view.tag.toString(),Toast.LENGTH_LONG)
+    fun handleButton(view : View, value : Int){
+        Log.i("testhandler", value.toString())
     }
 }
