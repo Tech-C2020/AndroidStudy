@@ -12,7 +12,13 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".BindSampleActivity"></activity>
+        <service
+                android:name=".StartService"
+                android:enabled="true"
+                android:exported="true"></service>
+
+        <activity android:name=".AsyncSampleActivity" />
+        <activity android:name=".BindSampleActivity" />
         <activity android:name=".BindingSampleActivity" />
         <activity android:name=".WebViewSampleActivity" />
         <activity android:name=".FragmentSampleActivity" />

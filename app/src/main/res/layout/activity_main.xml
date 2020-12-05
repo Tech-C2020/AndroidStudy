@@ -6,72 +6,92 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <LinearLayout
+    <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent">
 
-        <Button
-                android:id="@+id/ui_sample_btn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/ui_sample_btn_title" />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-                android:id="@+id/db_sample_btn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/db_sample_btn_title" />
+            <Button
+                    android:id="@+id/ui_sample_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/ui_sample_btn_title" />
 
-        <Button
-                android:id="@+id/pref_sample_btn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/pref_sample_btn_title" />
+            <Button
+                    android:id="@+id/db_sample_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/db_sample_btn_title" />
 
-        <Button
-                android:id="@+id/list_sample_btn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/list_sample_btn_title" />
+            <Button
+                    android:id="@+id/pref_sample_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/pref_sample_btn_title" />
 
-        <Button
-                android:id="@+id/intent_sample_btn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/intent_sample_btn_title" />
+            <Button
+                    android:id="@+id/list_sample_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/list_sample_btn_title" />
 
-        <Button
-                android:id="@+id/fragment_sample_btn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/fragment_sample_btn_title" />
+            <Button
+                    android:id="@+id/intent_sample_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/intent_sample_btn_title" />
 
-        <Button
-                android:id="@+id/webview_sample_btn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/webview_sample_btn_title" />
+            <Button
+                    android:id="@+id/fragment_sample_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fragment_sample_btn_title" />
 
-        <Button
-                android:id="@+id/binding_sample_btn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/binding_sample_btn_title" />
+            <Button
+                    android:id="@+id/webview_sample_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/webview_sample_btn_title" />
 
-    </LinearLayout>
+            <Button
+                    android:id="@+id/binding_sample_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/binding_sample_btn_title" />
+
+            <Button
+                    android:id="@+id/async_sample_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/async_sample_btn_title" />
+
+            <Button
+                    android:id="@+id/service_sample_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/service_sample_btn_title" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

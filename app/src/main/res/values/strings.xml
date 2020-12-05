@@ -8,4 +8,6 @@
     <string name="fragment_sample_btn_title">Fragmentサンプル</string>
     <string name="webview_sample_btn_title">WebViewサンプル</string>
     <string name="binding_sample_btn_title">Bindingサンプル</string>
+    <string name="async_sample_btn_title">Threadサンプル</string>
+    <string name="service_sample_btn_title">Serviceサンプル</string>
 </resources>
