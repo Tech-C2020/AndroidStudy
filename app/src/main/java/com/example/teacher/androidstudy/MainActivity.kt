@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val bindingBtn = findViewById<Button>(R.id.binding_sample_btn)
         val asyncViewBtn = findViewById<Button>(R.id.async_sample_btn)
         val serviceBtn = findViewById<Button>(R.id.service_sample_btn)
+        val asyncTaskViewBtn = findViewById<Button>(R.id.async_task_sample_btn)
 
         // listenerをsetOnClickListenerメソッドで渡す（レガシー）
 //        sampleBtn.setOnClickListener(object : View.OnClickListener{
@@ -85,6 +86,11 @@ class MainActivity : AppCompatActivity() {
         serviceBtn.setOnClickListener {
             val intent = Intent(this,StartService::class.java)
             startService(intent)
+        }
+
+        asyncTaskViewBtn.setOnClickListener {
+            val intent = Intent(this,AsyncTaskSampleActivity::class.java)
+            startActivity(intent)
         }
        // sampleBtn.setOnClickListener(UISampleListener())
     }
